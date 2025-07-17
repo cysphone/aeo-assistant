@@ -3,10 +3,8 @@ import requests
 from twilio.twiml.messaging_response import MessagingResponse
 import os
 
+
 app = Flask(__name__)
-@app.route("/", methods=["GET"])
-def index():
-    return "✅ Aeo-agent is live, server is working!"
 
 # ✅ Environment Variables
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
